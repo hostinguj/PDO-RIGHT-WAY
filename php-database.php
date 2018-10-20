@@ -37,10 +37,7 @@
 
 		$database->beginTransaction();
 
-		/* select: $database->query('SELECT * FROM users WHERE id = ?', [10])*/
-		/* create: $database->create('users', ['first_name' => 'Jurek', 'last_name' => 'Owsiak', 'employer' => 'Wielka orkiestra']); */
-		/* update: $database->update('users', ['first_name' => 'Jurek', 'last_name' => 'Owsiak', 'employer' => 'Wielka orkiestra'], 'id', 10); */
-		/* delete: $database->delete('users', 'id', 10); */
+		/* Twoje zapytania */
 		
 		$database->commit();
 	}

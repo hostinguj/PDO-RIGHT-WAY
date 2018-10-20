@@ -45,5 +45,5 @@
 	{
 		$database->rollBack(); 
 		
-		// Error handler 
+		/* Error handler */
 	}

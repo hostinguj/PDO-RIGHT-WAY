@@ -30,8 +30,8 @@
 				return $this->query('UPDATE ' . $table . ' SET ' . implode(', ', $array) . ' WHERE '. $update_key .' = :update_value', $data);
 			}
 			
-			public function delete($table, $key, $value) {
-				return $this->query('DELETE FROM ' . $table . ' WHERE ' . $key . ' = ?', [$value]);
+			public function delete($table, $delete_key, $delete_value) {
+				return $this->query('DELETE FROM ' . $table . ' WHERE ' . $delete_key . ' = ?', [$delete_value]);
 			}
 		};
 

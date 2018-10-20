@@ -2,7 +2,7 @@
 Właściwe zastosowanie PDO w PHP. Sposób właściwego wdrożenia PDO. 
 
 
-##Sposób zastosowania
+## Sposób zastosowania
 
 Pobieranie danych: 
 

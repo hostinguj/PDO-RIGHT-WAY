@@ -1,7 +1,3 @@
-# php-database
-Właściwe zastosowanie PDO w PHP. Sposób właściwego wdrożenia PDO. 
-
-
 ## Sposób zastosowania
 
 Pobieranie danych: 

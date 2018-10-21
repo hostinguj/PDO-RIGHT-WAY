@@ -1,19 +1,15 @@
 <?php
 	try
 	{
-		$database = new class extends PDO {
-			public function __construct() {
-				parent::__construct(
-					'mysql:host=localhost;dbname=database;charset=utf8', 'root', 'password', 
-					[
-						PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-						PDO::ATTR_PERSISTENT => false,
-						PDO::ATTR_EMULATE_PREPARES => true,
-						PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-					]
-				);
-			}
-	
+		$database = new class (
+			'mysql:host=localhost;dbname=mycms;charset=utf8', 'root', '', 
+			[
+				PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
+				PDO::ATTR_PERSISTENT => false, 
+				PDO::ATTR_EMULATE_PREPARES => true, 
+				PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+			]) 
+		extends PDO {
 			public function query($query, $arguments = false) { 
 				if ($arguments === false) return parent::query($query);
 				$statement = parent::prepare($query);
